@@ -7,7 +7,7 @@ const Greetings = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(randomGreeting());
-  }, []);
+  }, [dispatch]);
 
   return (
     <h1>{greetings.greeting}</h1>
