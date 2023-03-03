@@ -7,7 +7,6 @@ const Greetings = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(randomGreeting());
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
